@@ -14,6 +14,6 @@ Because of using Firebase Authentication in the project the are three fields to 
 To log in first time just fill in all the fields and hit the Log in button.
 
 In case of some troubles you can use already registered user: 
-Name: 'any'
-Email: test@gmail.com
-Password: 123456
+- Name: 'any'
+- Email: test@gmail.com
+- Password: 123456
