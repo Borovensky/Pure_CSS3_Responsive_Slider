@@ -17,3 +17,6 @@ In case of some troubles you can use already registered user:
 - Name: 'any'
 - Email: test@gmail.com
 - Password: 123456
+
+In case you want to make changes in code, first, make sure you have at least version 3.9 of the CLI version of gulp. 
+Then to run gulp watch command run the 'gulp' command.
