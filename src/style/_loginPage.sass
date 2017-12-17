@@ -1,0 +1,53 @@
+.mainContainer
+	position: absolute
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	background-color: $mainBackgroungColor
+
+.innerContainer
+	width: 450px
+	height: 350px
+	border-radius: 10px
+	background-color: $secondaryColor
+
+.formContainer
+	position: relative
+	width: 100%
+	height: 100%
+	display: flex
+	align-items: center
+	flex-direction: column
+	justify-content: space-around
+
+.inputContainer
+	position: relative
+	top: 10px
+	margin: 10px
+	.labelStyle
+		position: absolute
+		top: -20px
+		left: 5px
+	.inputStyle
+		width: 250px
+		height: 30px
+		font-size: 18px
+		border: 1px solid $borderColor
+		border-radius: 5px
+		outline: none
+	.invalidInputStyle
+		border-color: $errorColor
+	.errorText
+		position: absolute
+		left: 5px
+		color: $errorColor
+
+.submutButton
+	width: 200px
+	height: 30px
+	outline: none
+	border: 1px solid $borderColor
+	border-radius: 5px
+	font-size: 14px

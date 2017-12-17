@@ -1,0 +1,91 @@
+.homePageContainer 
+    position: absolute
+    width: 100%
+    height: 100%
+    header
+        position: fixed
+        top: 0
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100%
+        height: 80px
+        background-color: $secondaryColor
+        z-index: 2
+    footer
+        position: fixed
+        bottom: 0
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        width: 100%
+        height: 80px
+        background-color: $secondaryColor
+        z-index: 2
+        button
+            margin-right: 50px
+            width: 100px
+            height: 40px
+            font-size: 15px
+            outline: none
+            border: 1px solid $borderColor
+            border-radius: 5px
+
+.slider
+    position: relative
+    width: 100%
+    height: 100%
+    overflow: hidden
+    input[type='radio']
+        display: none
+    .trigger
+        position: absolute
+        display: flex
+        align-items: center
+        height: 40px
+        border-radius: 10px
+        bottom: 0
+        left: 50%
+        padding: 0px 10px
+        transform: translateX(-50%)
+        margin-bottom: 120px
+        background-color: rgba(0, 0, 0, 0.5)
+        z-index: 1
+        label
+            width: 20px
+            height: 20px
+            border: 2px solid rgba(255, 255, 255, 0.5)
+            border-radius: 50%
+            margin-right: 10px
+            cursor: pointer
+            &:last-child
+                margin: 0
+
+    .imagesContainer
+        position: absolute
+        width: 500%
+        height: 100%
+        top: 0
+        transition: all .5s ease-in-out
+    figure
+        position: relative
+        width: 20%
+        height: 100%
+        float: left
+        margin: 0
+        @for $i from 1 through 5
+            #img#{$i}
+                width: 100%
+                height: 100%
+                background: url(./img/#{$i}.jpg)
+
+@for $i from 1 through 4
+    #slide#{$i + 1}
+        &:checked ~ .imagesContainer
+             transform: translateX(-20% * $i)
+
+@for $i from 1 through 5
+    #slide#{$i}
+        &:checked ~ .trigger label[for='slide#{$i}']
+            background: #fff
+
