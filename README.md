@@ -5,9 +5,12 @@ What is user: ReactJS, Gulp, Firebase(Auth), SASS.
 Launch the project in few simple steps:
 
 - clone project
-- run 'npm install' at the root of the project
-- run 'npm start' to launch dev server
-- in browser http://localhost:8080/
+```bash
+npm install
+npm start
+```
+in browser
+http://localhost:8080/
 
 Because of using Firebase Authentication in the project the are three fields to log in: Name (required, frontend side validation), Email and Password (required, frontend and backend(Firebase) side validation).
 
